@@ -10,42 +10,25 @@
     <title>Login</title>
 </head>
 <body>
-    <!--Navbar-->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="static/img/1.jpeg" alt="logo" width="30" height="24">
-                <a class="navbar-brand" href="#">PetHub</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
-                        <a class="nav-link" href="#">Explorar Mascota</a>
-                        <a class="nav-link" href="#">Perfil</a>
-                        <a class="nav-link active" href="#">Login</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <!--Login-->
     <main>
-        <div class="LoginUsuario">
+        <form action="home.html" method="get" class="LoginUsuario">
             <h1 id="encabezado">
                 <Strong>PetHub</Strong><br>
-                <h4 id="eslogan">
-                    "Conecta con otros amantes de las mascotas"
-                </h4>
             </h1>
+            <h2 id="eslogan">
+                "Conecta con otros amantes de las mascotas"
+            </h2><br>
             <label for="usuarioImput" class="form-label"><strong>Nombre de usuario o Correo electronico</strong></label>
-            <input type="text" id="usuarioImput" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Nombre de usuario o Correo electronico">
-            <label for="passwordImput" class="form-label"><strong>Contraseña</strong></label>
-            <input type="password" id="passwordImput" class="form-control" aria-describedby="passwordHelpBlock" placeholder="contraseña"><br>
-            <button type="button" class="btn btn-success mx-auto d-block">Iniciar sesion</button><br>
-        </div>
+            <input type="email" required id="usuarioImput" class="form-control" aria-describedby="passwordHelpBlock" placeholder="example123@gmail.com">
+            <div class="conteiner_password">
+                <label for="passwordImput" class="form-label"><strong>Contraseña</strong></label><a href="#">Olvidé mi contraseña</a>
+            </div>
+            <input type="password" required id="passwordImput" class="form-control" aria-describedby="passwordHelpBlock" placeholder="password123"><br>
+            <button type="submit" class="btn btn-success mx-auto">Iniciar Sesión</button><br>
+            <hr><br>
+            <a id="crear_cuenta" href="#">Crear una nueva cuenta</a><br>
+        </form>
         
     </main>
     

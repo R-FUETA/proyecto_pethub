@@ -3,17 +3,33 @@ body{
 }
 
 .LoginUsuario{
-    margin-top: 10%;
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: white;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    max-width: 500px;
+    margin: 100px auto auto auto;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: #C9C9C9;
 }
 
 #encabezado{
+    margin-top: 10px;
     text-align: center;
 }
 
 #eslogan{
     text-align: center;
+    font-size: larger;
+}
+
+.conteiner_password{
+    display: flex;
+    justify-content: space-between;
+}
+
+#crear_cuenta{
+    display: flex;
+    justify-content: center;
 }
